@@ -1,6 +1,6 @@
 import React from "react";
 
-function Footer(props) {
+function Footer() {
   return (
     <div className="footer">
       <h5>This website is made by me</h5>
