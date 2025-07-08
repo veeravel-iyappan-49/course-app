@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+
 
 function Course(props) {
   return (
@@ -12,11 +12,6 @@ function Course(props) {
     </div>
   );
 }
-Course.propTypes = {
-  name: PropTypes.string.isRequired,
-  time: PropTypes.string,
-  price: PropTypes.string,
-  rating: PropTypes.string,
-};
+
 
 export default Course;
