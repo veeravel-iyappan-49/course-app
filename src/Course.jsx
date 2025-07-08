@@ -3,13 +3,18 @@ import PropTypes from "prop-types";
 
 function Course(props) {
   return (
-    <div className="card">
-      <img src={props.image} alt="Course Image" />
-      <h3>{props.name} Full Course</h3>
-      <p>Duration:{props.time}</p>
-      <p>Price:<b>{props.price}</b></p>
-      <p>Rating:{props.rating}</p>
-    </div>
+    // using conditional rendering for omit the empty or unnamed entries
+    props.name && (
+      <div className="card">
+        <img src={props.image} alt="Course Image" />
+        <h3>{props.name} Full Course</h3>
+        <p>Duration:{props.time}</p>
+        <p>
+          Price:<b>{props.price}</b>
+        </p>
+        <p>Rating:{props.rating}</p>
+      </div>
+    )
   );
 }
 Course.propTypes = {
