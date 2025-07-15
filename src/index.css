@@ -1,11 +1,17 @@
-.card{
+.card {
   display: inline-block;
-  line-height: .5;
-
+  line-height: 0.5;
 }
-.card img{
-  max-width: 200px;
-  border: 3px solid ;
+.card img {
+  max-width: 400px;
+  border: 3px solid;
   border-radius: 50px;
-
+}
+button {
+  background-color: blue;
+  border-radius: 10%;
+  font-family: cursive;
+}
+body {
+  background-color: cadetblue;
 }
