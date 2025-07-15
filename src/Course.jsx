@@ -23,7 +23,7 @@ function Course(props) {
         </p>
         <p>Rating:{props.rating}</p>
         <button onClick={() => BuyCourse(20)}>Buy Now</button>
-        <button onClick={()=>props.delete(props.id)}>Delete</button>
+        <button onClick={()=> props.delete(props.id)}>Delete</button>
       </div>
     )
   );
