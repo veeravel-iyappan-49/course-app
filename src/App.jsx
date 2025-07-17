@@ -4,13 +4,14 @@ import Navbar from "./navbar";
 import Footer from "./Footer";
 import CourseList from "./CourseList";
 import Login from "./login";
-
+import HomePage from "./HomePage";
 
 function App() {
   return (
     <>
-      <Login/>
-      <CourseList/>
+      <HomePage />
+      <Login />
+      <CourseList />
       <Navbar />
       <Footer />
     </>

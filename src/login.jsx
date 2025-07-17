@@ -1,12 +1,13 @@
 import React from "react";
+import Signup from "./Signup";
 
 function Login() {
   return (
     <div>
+      <p style={{ textAlign: "left" }}>
+        <strong>Please login below to access</strong>
+      </p>
       <form>
-        <p>
-          <strong>Please login below to access</strong>
-        </p>
         <table>
           <tr>
             <td>
@@ -16,7 +17,11 @@ function Login() {
             </td>
             <td>:</td>
             <td>
-              <input type="text" className="user" />
+              <input
+                type="text"
+                className="user"
+                placeholder="Username goes here"
+              />
             </td>
           </tr>
           <tr>
@@ -27,66 +32,20 @@ function Login() {
             </td>
             <td>:</td>
             <td>
-              <input type="password" className="pwd" />
+              <input
+                type="password"
+                className="pwd"
+                placeholder="Password goes here"
+              />
             </td>
           </tr>
           <button>Login</button>
         </table>
       </form>
-      <p>
+      <p style={{ textAlign: "left" }}>
         Don't have an account?
-        <a href=""> Signup </a>here
+        <a href="Signup"> Signup </a>here
       </p>
-      <form>
-        <table>
-          <tr>
-            <td>
-              <label htmlFor="email">Enter Your Email</label>
-            </td>
-            <td>:</td>
-            <td>
-              <input type="email" />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <label htmlFor="email">Create Your Username</label>
-            </td>
-            <td>:</td>
-            <td>
-              <input type="text" />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <label htmlFor="email">Create Your Own Password</label>
-            </td>
-            <td>:</td>
-            <td>
-              <input type="password" />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <label htmlFor="cpassword">Confrim Your Password</label>
-            </td>
-            <td>:</td>
-            <td>
-              <input type="password" />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <label htmlFor="DOB">Date Of Birth</label>
-            </td>
-            <td>:</td>
-            <td>
-              <input type="Date" />
-            </td>
-          </tr>
-        </table>
-      </form>
-      <button type="submit">Create Account</button>
     </div>
   );
 }
